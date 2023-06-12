@@ -1,0 +1,14 @@
+{
+  "signedusers": [
+    {
+      "email": "adelola@gmail.com",
+      "password": "adeolal",
+      "id": 1
+    },
+    {
+      "email": "adewale@gmail.com",
+      "password": "adewale",
+      "id": 2
+    }
+  ]
+}

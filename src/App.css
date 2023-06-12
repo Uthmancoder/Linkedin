@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* landing page logo */
+.parent {
+  height: 5px;
+  width: 200px;
+  background-color: lightgray; /* Just for visibility */
+  position: relative;
+  border-radius: 5px;
+}
+
+.child {
+  width: 100px;
+  height: 5px;
+  background-color: rgb(10, 102, 194);
+  border-radius: 5px;
+  position: absolute;
+  animation: slide 1s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100px;
+  }
+}
+.logo{
+  font-size: 50px;
+  color: rgb(10, 102, 194);
+}
+.logopage{
+  height: 100vh;
+}
+
+
+/* signup page styles */
+
+.log{
+  color: rgb(10, 102, 194);
+  margin: 2% 10%;
+}
+.form{
+  width: 40%;
+  background-color: white;
+}
+.agree{
+  background-color: rgb(10, 102, 194);
+  border: none;
+  color: white;
+  padding: 13px 0;
+}
+.img{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.smh{
+  font-size: 12px;
+}
+#swggl{
+  background-color: aliceblue;
+}
+.rel{
+  position: relative;
+}
+.show, .hide{
+  position: absolute;
+  right: 10px;
+  border: none;
+  background: none;
+}
+.hide{
+  display: none;
+}
+
+/* signin sytles */
+.forgot{
+  border: none;
+  background: none;
+  padding: 5px 10px;
+}
+.forgot:hover{
+  background-color: rgb(140, 193, 239);
+}
