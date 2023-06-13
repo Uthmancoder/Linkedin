@@ -8,6 +8,7 @@ import LogoPage from "./Components/LogoPage";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
 import "react-toastify/dist/ReactToastify.css";
+import LandingPage from "./LandingPage";
 import { Routes, route, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
 
@@ -20,6 +21,7 @@ root.render(
       <Routes>
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn/>} />
+        <Route  path="/" element={<LandingPage/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -24,9 +24,10 @@ const SignIn = () => {
   }, []);
   const usermail = document.querySelector(".email")
   const userpass = document.querySelector(".password")
-  const handleSubmit = ()=>{
-    let emailExist = data.find((el)=> el.email === usermail.value)
-    let passwordExist = data.find((el)=> el.password === userpass.value)
+  const handleSubmit = (ev)=>{
+    ev.preventDefault()
+    let emailExist = data.find((el)=> el.email === email)
+    let passwordExist = data.find((el)=> el.password === password)
 
     if (emailExist && passwordExist) {
         toast.success("User logged in successful")

@@ -9,7 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [data, setData] = useState([]);
-  const Navigate = useNavigate()
+  const Navigate = useNavigate();
   useEffect(() => {
     axios
       .get("http://localhost:3241/signedusers") // Use axios.get instead of axios.post
@@ -56,30 +56,30 @@ const SignUp = () => {
           .then((res) => {
             console.log(res);
             toast.success("Registration Successful");
-            Navigate("/signin")
+            setTimeout(() => {
+              Navigate("/signin");
+            }, 6000);
           })
           .catch((error) => {
             console.log(error);
             toast.error("Registration failed");
           });
-         
-          
       }
     },
   });
 
-  const handleshow = (event)=>{
-    event.preventDefault()
-    document.getElementById("password").type = "text"
-    document.querySelector(".show").style.display ="none"
-    document.querySelector(".hide").style.display ="block"
-  }
-  const handleHide = (ev)=>{
-    ev.preventDefault()
-    document.getElementById("password").type = "password"
-    document.querySelector(".hide").style.display ="none"
-    document.querySelector(".show").style.display ="block"
-  }
+  const handleshow = (event) => {
+    event.preventDefault();
+    document.getElementById("password").type = "text";
+    document.querySelector(".show").style.display = "none";
+    document.querySelector(".hide").style.display = "block";
+  };
+  const handleHide = (ev) => {
+    ev.preventDefault();
+    document.getElementById("password").type = "password";
+    document.querySelector(".hide").style.display = "none";
+    document.querySelector(".show").style.display = "block";
+  };
   return (
     <div className="bg-light">
       <nav className="row w-100">
@@ -120,7 +120,7 @@ const SignUp = () => {
                 <label htmlFor="email">Password (6 or more characters)</label>
                 <div className="d-flex align-items-center rel">
                   <input
-                  id="password"
+                    id="password"
                     type="password"
                     name="password"
                     value={formik.values.password}
@@ -131,8 +131,12 @@ const SignUp = () => {
                         : "form-control"
                     }
                   />
-                  <button onClick={handleshow} className="show">show</button>
-                  <button onClick={handleHide} className="hide">hide</button>
+                  <button onClick={handleshow} className="show">
+                    show
+                  </button>
+                  <button onClick={handleHide} className="hide">
+                    hide
+                  </button>
                 </div>
 
                 <small className="text-danger">{formik.errors.password}</small>

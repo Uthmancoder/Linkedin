@@ -19,6 +19,16 @@
       "email": "olawale@gmail.com",
       "password": "olawale",
       "id": 4
+    },
+    {
+      "email": "chiboyymoney@gmail.com",
+      "password": "chiboy",
+      "id": 5
+    },
+    {
+      "email": "ade@gmail.com",
+      "password": "ademail",
+      "id": 6
     }
   ]
 }

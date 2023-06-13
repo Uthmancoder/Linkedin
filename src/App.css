@@ -77,9 +77,19 @@
   right: 10px;
   border: none;
   background: none;
+  border-radius: 30px;
+  padding: 0 10px 5px 10px;
 }
 .hide{
   display: none;
+}
+.show:hover{
+  background-color: rgba(7, 125, 228, 0.5);
+  color: white;
+}
+.hide:hover{
+  background-color: rgba(12, 135, 242, 0.5);
+  color: white;
 }
 
 /* signin sytles */
@@ -87,7 +97,39 @@
   border: none;
   background: none;
   padding: 5px 10px;
+  border-radius: 30px;
 }
 .forgot:hover{
   background-color: rgb(140, 193, 239);
+  color: white;
+}
+.hr{
+  width: 40px;
+  transform: rotate(90deg);
+}
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.inpsearch{
+  border: none;
+  outline: none;
+  background: none;
+}
+.bigboard{
+  height: 37px;
+  background-color: aliceblue;
+}
+.inpsearch:focus{
+  width: 350px;
+}
+.bigboard:focus-within{
+  outline: 2px solid black;
+}
+.linkedin{
+  color:  rgb(10, 102, 194);
+}
+nav{
+  background-color: white;
 }
