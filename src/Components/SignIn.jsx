@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { BsLinkedin } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -11,7 +12,7 @@ const SignIn = () => {
   useEffect(() => {
     // getting the items from the server
     axios
-      .get("http://localhost:3241/signedusers") 
+      .get("http://localhost:3241/signedusers")
       .then((res) => res.data)
       .then((data) => {
         setData(data);
@@ -20,36 +21,46 @@ const SignIn = () => {
       .catch((error) => {
         console.log("Error fetching data", error);
       });
-
   }, []);
-  const usermail = document.querySelector(".email")
-  const userpass = document.querySelector(".password")
-  const handleSubmit = (ev)=>{
-    ev.preventDefault()
-    let emailExist = data.find((el)=> el.email === email)
-    let passwordExist = data.find((el)=> el.password === password)
+  const Navigate = useNavigate();
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
 
-    if (emailExist && passwordExist) {
-        toast.success("User logged in successful")
-    }else if (!emailExist && !passwordExist) {
-        toast.error("User not found")
+    if (data.length === 0) {
+      toast.error("No users found");
+      return;
     }
-  }
-  const handleshow = (event)=>{
-    event.preventDefault()
-    document.getElementById("password").type = "text"
-    document.querySelector(".show").style.display ="none"
-    document.querySelector(".hide").style.display ="block"
-  }
-  const handleHide = (ev)=>{
-    ev.preventDefault()
-    document.getElementById("password").type = "password"
-    document.querySelector(".hide").style.display ="none"
-    document.querySelector(".show").style.display ="block"
-  }
+
+    const emailExist = data.find((el) => el.email === email);
+    const passwordExist = data.find((el) => el.password === password);
+     if (email === "" || password === "")   {
+      toast.error("Input Fields can not be empty");
+     }
+    else if (!emailExist || !passwordExist) {
+      toast.error("User not found");
+    } else {
+      toast.success("User logged in successfully");
+      setTimeout(() => {
+        Navigate("/");
+      }, 6000);
+    }
+  };
+
+  const handleshow = (event) => {
+    event.preventDefault();
+    document.getElementById("password").type = "text";
+    document.querySelector(".show").style.display = "none";
+    document.querySelector(".hide").style.display = "block";
+  };
+  const handleHide = (ev) => {
+    ev.preventDefault();
+    document.getElementById("password").type = "password";
+    document.querySelector(".hide").style.display = "none";
+    document.querySelector(".show").style.display = "block";
+  };
   return (
     <div>
-      <div className="bg-light">
+      <div className="bg-light " style={{ height: "100vh" }}>
         <nav className="row w-100">
           <div className="col-6">
             <h1 className="fs-2 log fw-bolder d-flex align-items-center">
@@ -69,7 +80,7 @@ const SignIn = () => {
                 <h1>Sign in</h1>
                 <small>Stay updated on your professional world</small>
                 <div>
-                <input
+                  <input
                     type="email"
                     name="email"
                     className="form-control p-2"
@@ -80,7 +91,7 @@ const SignIn = () => {
                 </div>
                 <div>
                   <div className="d-flex align-items-center rel">
-                  <input
+                    <input
                       id="password"
                       type="password"
                       name="password"
@@ -131,9 +142,6 @@ const SignIn = () => {
                     alt=""
                   />
                 </div>
-                <small className="mx-auto text-center">
-                  Already on LinkedIn? <Link to="signin">Sign in</Link>
-                </small>
               </form>
               <div className="d-flex align-items-center my-3">
                 <small className="text-center w-100 mx-auto">

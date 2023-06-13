@@ -29,6 +29,58 @@
       "email": "ade@gmail.com",
       "password": "ademail",
       "id": 6
+    },
+    {
+      "email": "akandeadebayo025@gmail.com",
+      "password": "adewa12",
+      "id": 7
+    },
+    {
+      "0": {
+        "email": "adelola@gmail.com",
+        "password": "adeolal",
+        "id": 1
+      },
+      "1": {
+        "email": "adewale@gmail.com",
+        "password": "adewale",
+        "id": 2
+      },
+      "2": {
+        "email": "adewaleagbolahan025@gmail.com",
+        "password": "Adeola12",
+        "id": 3
+      },
+      "3": {
+        "email": "olawale@gmail.com",
+        "password": "olawale",
+        "id": 4
+      },
+      "4": {
+        "email": "chiboyymoney@gmail.com",
+        "password": "chiboy",
+        "id": 5
+      },
+      "5": {
+        "email": "ade@gmail.com",
+        "password": "ademail",
+        "id": 6
+      },
+      "6": {
+        "email": "akandeadebayo025@gmail.com",
+        "password": "adewa12",
+        "id": 7
+      }
+    }
+  ],
+  "userprofile": [
+    {
+      "firstname": "Adewale",
+      "name": "Agbolahan",
+      "title": "web developer",
+      "school": "Sqi college of ict",
+      "location": "ibadan",
+      "id": 9
     }
   ]
 }

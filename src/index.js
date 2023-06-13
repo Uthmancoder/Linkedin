@@ -8,9 +8,12 @@ import LogoPage from "./Components/LogoPage";
 import SignUp from "./Components/SignUp";
 import SignIn from "./Components/SignIn";
 import "react-toastify/dist/ReactToastify.css";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import LandingPage from "./LandingPage";
 import { Routes, route, Route } from "react-router-dom";
 import { BrowserRouter } from "react-router-dom";
+import Profile from "./Profile";
+import UserSetup from "./UserSetup";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -22,6 +25,8 @@ root.render(
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn/>} />
         <Route  path="/" element={<LandingPage/>}/>
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/usersetup" element={<UserSetup/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

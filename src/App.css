@@ -77,16 +77,16 @@
   right: 10px;
   border: none;
   background: none;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   padding: 0 10px 5px 10px;
 }
 .hide{
   display: none;
 }
-.show:hover{
+/* .show:hover{
   background-color: rgba(7, 125, 228, 0.5);
   color: white;
-}
+} */
 .hide:hover{
   background-color: rgba(12, 135, 242, 0.5);
   color: white;
@@ -161,4 +161,48 @@ nav{
   position: absolute;
   top: 40%;
   left: 32%;
+}
+.angup{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  display: none;
+  color: rgb(77, 74, 71);
+}
+.header:hover .angup{
+ display: block;
+}
+
+/* mainpage styles */
+
+.postimg{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.post{
+  width: 85%;
+  outline: none;
+  border: 1px solid grey;
+}
+.modal-dialog{
+  position: relative;
+}
+.btn-close{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.profilebackground{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 3%;
 }
