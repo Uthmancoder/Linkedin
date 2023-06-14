@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "./Components/NavBar";
 import LeftCard from "./LeftCard";
 import MainPage from "./MainPage";
+import RightCard from "./RightCard";
 
 const LandingPage = () => {
   return (
@@ -13,7 +14,7 @@ const LandingPage = () => {
             <LeftCard />
           </div>
           <div className="col-6"><MainPage/></div>
-          <div className="col-3"></div>
+          <div className="col-3"><RightCard/></div>
         </div>
       </div>
     </div>

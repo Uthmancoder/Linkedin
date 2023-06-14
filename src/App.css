@@ -40,6 +40,31 @@
 .logopage{
   height: 100vh;
 }
+/* navbar style */
+nav{
+  position: relative;
+}
+.usersupload{
+  position: absolute;
+  top: 100%;
+  z-index: 999;
+}
+.changeimg{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.name{
+  margin-bottom: -10px;
+}
+.custom-file-input {
+  display: inline-block;
+  padding: 8px;
+  background-color: #2647b4;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 /* signup page styles */
@@ -108,8 +133,9 @@
   transform: rotate(90deg);
 }
 .profile{
-  width: 30px;
-  height: 30px;
+  width: 33px;
+  background-color: rgb(77, 74, 71);
+  height: 33px;
   border-radius: 100%;
 }
 .inpsearch{
@@ -156,6 +182,7 @@ nav{
 }
 .coverPhoto{
   position: relative;
+  height: 100px;
 }
 .pixboarder{
   position: absolute;
@@ -205,4 +232,7 @@ nav{
   position: absolute;
   top: 60%;
   left: 3%;
+}
+.posticons:hover{
+  background-color: rgba(77, 74, 71, 0.1);
 }
