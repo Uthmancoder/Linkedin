@@ -3,7 +3,7 @@ import {RiContactsBook2Line} from 'react-icons/ri'
 
 const RightCard = () => {
   return (
-    <div>
+    <div className="rightcard">
       <div className="card w-100 p-2 border">
         <div className="d-flex justify-content-between">
           <h6>Addd Your feed</h6>

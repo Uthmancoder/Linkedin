@@ -38,10 +38,10 @@ const NavBar = () => {
   const addimg = () => {
     if (selectedImage) {
       const formData = new FormData();
-      formData.append("data.image", selectedImage);
+      formData.append("image", selectedImage);
 
-      fetch("http://localhost:3241/userprofile/image", {
-        method: "PATCH",
+      fetch("http://localhost:3241/userprofile", {
+        method: "PUT",
         body: formData,
       })
         .then((res) => res.json())
@@ -59,7 +59,7 @@ const NavBar = () => {
     const user = document.getElementById("me");
     const upload = document.querySelector(".usersupload");
     user.addEventListener("click", () => {
-     if ( upload.style.display === "none") {
+     if ( upload.style.display == "none") {
       upload.style.display = "block";
      }else{
       upload.style.display = "none";

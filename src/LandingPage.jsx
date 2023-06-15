@@ -10,7 +10,7 @@ const LandingPage = () => {
       <NavBar />
       <div className="bg-light mainpage py-3 px-5">
         <div className="container row mt-3 ">
-          <div className="col-3">
+          <div className="col-3 ">
             <LeftCard />
           </div>
           <div className="col-6"><MainPage/></div>

@@ -12,7 +12,7 @@ const LeftCard = () => {
   }, []);
 
   return (
-    <div>
+    <div className="leftcard w-100">
       <div className="card w-100 ">
         <div className="coverPhoto">
         {data.length > 0 && (

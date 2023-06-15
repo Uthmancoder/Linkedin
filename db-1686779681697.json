@@ -1,0 +1,97 @@
+{
+  "signedusers": [
+    {
+      "email": "adelola@gmail.com",
+      "password": "adeolal",
+      "id": 1
+    },
+    {
+      "email": "adewale@gmail.com",
+      "password": "adewale",
+      "id": 2
+    },
+    {
+      "email": "adewaleagbolahan025@gmail.com",
+      "password": "Adeola12",
+      "id": 3
+    },
+    {
+      "email": "olawale@gmail.com",
+      "password": "olawale",
+      "id": 4
+    },
+    {
+      "email": "chiboyymoney@gmail.com",
+      "password": "chiboy",
+      "id": 5
+    },
+    {
+      "email": "ade@gmail.com",
+      "password": "ademail",
+      "id": 6
+    },
+    {
+      "email": "akandeadebayo025@gmail.com",
+      "password": "adewa12",
+      "id": 7
+    },
+    {
+      "0": {
+        "email": "adelola@gmail.com",
+        "password": "adeolal",
+        "id": 1
+      },
+      "1": {
+        "email": "adewale@gmail.com",
+        "password": "adewale",
+        "id": 2
+      },
+      "2": {
+        "email": "adewaleagbolahan025@gmail.com",
+        "password": "Adeola12",
+        "id": 3
+      },
+      "3": {
+        "email": "olawale@gmail.com",
+        "password": "olawale",
+        "id": 4
+      },
+      "4": {
+        "email": "chiboyymoney@gmail.com",
+        "password": "chiboy",
+        "id": 5
+      },
+      "5": {
+        "email": "ade@gmail.com",
+        "password": "ademail",
+        "id": 6
+      },
+      "6": {
+        "email": "akandeadebayo025@gmail.com",
+        "password": "adewa12",
+        "id": 7
+      }
+    }
+  ],
+  "userprofile": [
+    {
+      "firstname": "Adewale",
+      "name": "Agbolahan",
+      "title": "web developer",
+      "text": "Post to anyone",
+      "school": "Student at Sqi college of ict",
+      "location": "ibadan",
+      "image": "https://t4.ftcdn.net/jpg/00/84/67/19/360_F_84671939_jxymoYZO8Oeacc3JRBDE8bSXBWj0ZfA9.jpg",
+      "coverPhoto": "https://media.licdn.com/dms/image/D4D16AQEQ_E4zh7MMEw/profile-displaybackgroundimage-shrink_350_1400/0/1686487635822?e=1692230400&v=beta&t=zDNJ2BZ7LXo38ZGa6YOOUOdZcqnoDNIUXknDDfV3cVY",
+      "id": 9
+    }
+  ],
+  "posts": [
+    {
+      "userimg": "https://media.licdn.com/dms/image/D4D03AQGzjH1IrCxglA/profile-displayphoto-shrink_100_100/0/1670274575667?e=1692230400&v=beta&t=brLGZ-YC3artsPD_7S57JIW2ydDJPg8uq5V264gGZR4",
+      "name": "Adebayo Uthman",
+      "postcont": "Proven 7-step guide to becoming a Frontend Developer in 2023 🚨. with proofs",
+      "postimg": "https://media.licdn.com/dms/image/D5622AQGLeR60WXvoyQ/feedshare-shrink_800/0/1686481729769?e=1689811200&v=beta&t=LbFY-AsFgkkx0P5U7l5j9zvBjD1GZX-H2vfoNTY4TBA"
+    }
+  ]
+}

@@ -234,5 +234,35 @@ nav{
   left: 3%;
 }
 .posticons:hover{
-  background-color: rgba(77, 74, 71, 0.1);
+  background-color: rgba(92, 90, 87, 0.1);
+}
+.userimg{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+/* left card */
+.leftcard{
+  position: sticky;
+  top: 20px;
+}
+.rightcard{
+  position: sticky;
+  top: 20px;
+}
+.more{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 15px;
+}
+.postingimg{
+  width:55px;
+  height:55px;
+  border-radius: 100%;
+}
+.bag:hover{
+  background-color: rgba(77, 74, 71,0.1);
 }
